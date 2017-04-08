@@ -3,6 +3,7 @@ package com.freeman.remote;
 import com.freeman.model.MoviesResult;
 
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 import rx.Observable;
 
@@ -26,5 +27,11 @@ public interface Service {
 
     @GET("search/movie")
     Observable<MoviesResult> searchMovie(@Query("query") String query);
+
+    @GET("movie/{movie_id}/recommendations")
+    Observable<MoviesResult> fetchRecommendations(@Path("movie_id") int movieId);
+
+    @GET("movie/{movie_id}/similar")
+    Observable<MoviesResult> fetchSimiliraties(@Path("movie_id") int movieId);
 
 }
