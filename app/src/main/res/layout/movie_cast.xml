@@ -17,10 +17,7 @@
         android:textStyle="bold"
         android:text="Cast"/>
 
-
     <android.support.v7.widget.RecyclerView
-        android:orientation="horizontal"
-        app:reverseLayout="true"
         android:layout_marginTop="20dp"
         app:layoutManager="android.support.v7.widget.GridLayoutManager"
         tools:listitem="@layout/movie_cast_item"

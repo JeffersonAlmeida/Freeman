@@ -23,7 +23,6 @@
 
         </LinearLayout>
 
-
         <LinearLayout
             android:orientation="vertical"
             android:layout_gravity="center"
@@ -48,7 +47,6 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:text="Ator"/>
-
 
         </LinearLayout>
 
